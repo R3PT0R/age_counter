@@ -1,4 +1,11 @@
-age = input('How old are you?')
+age = raw_input("How old are you?")
+
+try:
+    age = int(age)
+except ValueError:
+    print('Error.Stop playing around OR ILL HUNT U WHILE U SLEEP')
+    exit()
+
 print('you are ' + str(age) + ' years old')
 
 '''
